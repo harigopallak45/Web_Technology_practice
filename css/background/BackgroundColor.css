@@ -1,0 +1,21 @@
+div{
+    width: 300px;
+    height: 300px;
+    /* color name */
+    background-color: magenta;
+    /* rgb */
+    background-color: rgb(0, 255, 0);
+    /* rgba */
+    background-color: rgba(127, 127, 127, 1);
+    /* hex */
+    background-color: #7f7f7f;
+    /* hexa */
+    background-color: #7f7f7f2f;
+    /* hsl */
+    background-color: hsl(102deg, 50%, 10%);
+    /* hsla */
+    background-color: hsla(102deg, 50%, 50%, 1);
+}
+#black{
+    background-color: black;
+}

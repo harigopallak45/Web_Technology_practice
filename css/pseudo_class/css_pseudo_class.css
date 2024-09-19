@@ -1,0 +1,48 @@
+/* 
+#first_form>:first-child{
+    color: red;
+    background-color: blue;
+}
+#first_form>:last-child{
+    color: blue;
+    background-color: red;
+}
+input{
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+#second_form>:first-child{
+    color: blue;
+    background-color: red;
+}
+#second_form>:last-child{
+    color: red;
+    background-color: blue;
+} */
+/* input:{
+    border: red;
+} */
+input{
+    outline: none;
+}
+
+#submit_btn{
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+input:valid{
+    border: solid green;
+}
+input:invalid{
+    border:solid red;
+}
+input:checked{
+    transform: scale(1.4);
+}

@@ -1,0 +1,8 @@
+h1{
+    font-size: 200px;
+    background-image: linear-gradient(to right,blue,magenta,red,rgb(255, 180, 41));
+    width: fit-content;
+    background-clip: text;
+    color: transparent;
+}
+

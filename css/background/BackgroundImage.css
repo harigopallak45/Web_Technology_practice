@@ -1,0 +1,28 @@
+div{
+    width: 300px;
+    height: 300px;
+}
+#linear_gradient{
+    background-image: linear-gradient(225deg, lightgreen 30%,lightblue 50%,aqua);
+}
+#radial_gradient{
+    background-image: radial-gradient(lightgreen,lightblue,aqua,maroon,white);
+}
+#conic_gradient{
+    background-image: conic-gradient(blue,yellow,red,orange,purple,white,chocolate,black,pink,magenta,teal,gray);
+} 
+#image{
+    background-color: silver;
+    width: 500px;
+    height: 500px;
+    background-image: url(../../assets/images/adiyogi.png);
+    background-size: 80% ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#phineas_image{
+    background-image: linear-gradient(135deg,red,transparent,transparent,transparent ,red),radial-gradient(transparent,transparent,transparent,black),url(../../assets/images/phineas.png);
+    background-size: 100%,100%,80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,12 @@
+#india_country,#china_country,#us_country{
+    width: 100px;    
+}
+#india_country{
+    border-right: 600px solid red;
+}
+#china_country{
+    border-right: 500px solid orange;
+}
+#us_country{
+    border-right: 300px solid green;
+}

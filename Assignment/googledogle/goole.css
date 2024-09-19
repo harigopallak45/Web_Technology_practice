@@ -1,0 +1,21 @@
+.child{
+    float: left;
+    font-size: 50px;
+}
+.G{
+    color: blue;
+}
+.o{
+    color: red;
+}
+#orange{
+    color: orange;
+}
+#l{
+    color: green;
+}
+.parent{
+    width: 30px;
+    height: 20px;
+    background-color: black;
+}

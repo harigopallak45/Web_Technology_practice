@@ -1,0 +1,82 @@
+ /* div{ */
+    /* width: 100px; */
+    /* height: 100px; */
+    /* background-image: linear-gradient(red,blue); */
+    /* float: left; */
+    /* background-color: red; */
+ /* }
+ #circular_border_radius{
+    /* Single Values */
+    /* border-radius: 20px; */
+
+    /* 2 values */
+    /* border-radius: 15px 30px; */
+
+    /* 4 values */
+    /* border-radius: 10px 14px 18px 22px; */
+
+    /* Sqaure to Circle */
+    /* border-radius: 0% 100% ;
+    /* float:left ; */
+ /* } */
+/* #ellipitcal_border_radius{ */
+    
+    /* Sqaure to Elliptical */
+    /* border-radius: 100% 0%; */
+
+/* }
+#parent{
+    width: 200px;
+    height: 200px;
+}
+    
+}
+#first_leaf,#forth_leaf{
+    border-radius: 0% 100% ;
+    /* float: left; */
+
+/* }
+#second_leaf,#third_leaf{
+    border-radius: 100% 0% ;
+    /* float: left; */
+
+/* } */
+#capsule{
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(to right,red  50%,blue 50%);
+    border-radius: 50px;
+}
+#capsule1{
+    width: 200px;
+    height: 100px;
+    
+}
+#red{
+    border-radius: 50% 0% 0% 50%;
+    background-color: red;
+}
+#blue{
+    border-radius: 0% 50% 50% 0%;
+    background-color: blue;
+}
+.child{
+    width: 50%;
+    height: 100%;
+    float: left;
+
+}
+
+#blue_capsule{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50px ;
+}
+#red_capsule{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    float: right;
+    border-radius: 0px 50px 50px 0px;
+} 

@@ -1,0 +1,28 @@
+/* The Universal Seclector */
+
+*{
+    color: red;
+}
+
+/* Tag name selecctor */
+h1{
+    color: blue;
+}
+label{
+    color: green;
+}
+input{
+    color: chartreuse;
+}
+
+/* Id selector */
+#id_select{
+    background-color: gray;
+}
+#id_label{
+    background-color: aqua;
+}
+#id_input{
+    margin-left: 50px;
+    color: orange;
+}

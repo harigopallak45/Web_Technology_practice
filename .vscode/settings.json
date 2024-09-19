@@ -1,0 +1,12 @@
+{
+    "codemaker.apiKey": "cm-WxmKMMLr1Kzcmzw2uUdhZPGA27GpswebRLfXCjgUxuKKLwWWdkD8bp2bK3D6DWJI",
+    "codemaker.enableAutocomplete": true,
+    "codemaker.allowMultiLineAutocomplete": true,
+    "codemaker.allowLocalContext": true,
+    "codemaker.enablePredictiveGeneration": true,
+    "codemaker.enableExtendedSourceContext": true,
+    "codemaker.enableSyntaxAutocorrection": true,
+    "codemate.openaiApiKey": "asst_7vljTO22IT88L8lUVNpmp3mK",
+    "codium.codeCompletion.enable": true,
+    "github.experimental.multipleAccounts": true
+}

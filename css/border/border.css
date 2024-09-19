@@ -1,0 +1,48 @@
+h1{
+    width: fit-content;
+    border-width: 5px;
+    border-color: darkgoldenrod;
+}
+#solid_border{
+    border-style: solid;
+}
+#dashed_border{
+    border-style: dashed;
+}
+#dotted_border{
+    border-style: dotted;
+}
+#double_border{
+    border-style: double;
+}
+#inset_border{
+    border-style: inset;
+}
+#outset_border{
+    border-style: outset;
+}
+
+div{
+    width: 200px ;
+    height: 200px;
+    border-width: 50px;
+    background-size: 90%;
+
+}
+#groove_border{
+    border-color: blue;
+    border-style: groove;
+    background-image: "../../assets/images/earth.png";
+}
+#ridge_border{
+    border-color: blue;
+    border-style: ridge;
+    background-image: "../../assets/images/astronaut.png";
+}
+
+#mixed_borders{
+    border-top: 15px solid red;
+    border-right: 15px double green ; 
+    border-bottom: 15px dashed  orange;
+    border-left: 15px dotted ;
+}

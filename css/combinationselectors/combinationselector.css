@@ -1,0 +1,59 @@
+#grandfather{
+    width: 100%;
+    height: 500px;
+    background-color: #a33131;
+    text-align: center;
+}
+#father,#babai{
+    width: 50%;
+    height: 88.5%;
+    float: left;
+}
+#father{
+    background-color: #11bdc9;
+}
+
+#you,#sib_one,#sib_two{
+    width: 33.3%;
+    height: 82%;
+    float: left;
+}
+#you{
+    background-color: #a04855;
+}
+#sib_one{
+    background-color: #b4ce10;
+}
+#sib_two{
+    background-color: #4eae81;
+}
+#babai{
+    background-color: #1a3a93;
+}
+#cousin_one,#cousin_two{
+    width: 50%;
+    height: 82%;
+    float: left;
+}
+#cousin_one{
+    background-color: #04a51f;
+}
+#cousin_two{
+    background-color: #99b551;
+}
+/* Child Selector */
+#grandfather > #father{
+    background-color: #ff0026;
+}
+#father> #sib_one{
+    background-color: lawngreen;
+}
+/* Decendent Selector */
+#father #sib_two_heading{
+    color: chocolate;
+}
+/* Adjacent Sibling Selector */
+/* Genaral Sibling Selector */
+#you ~ *{
+    background-color: red;
+}
