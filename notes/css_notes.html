@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete CSS Notes</title>
+    <link rel="stylesheet" href="./cm.css">
+</head>
+<body>
+
+    <h1>Complete CSS Notes</h1>
+
+    <!-- Introduction Section -->
+    <div class="section">
+        <h2>1. Introduction to CSS</h2>
+        <p>CSS (Cascading Style Sheets) is used to design and control the layout of web pages. CSS allows for separation of content and design.</p>
+        <ul>
+            <li><strong>Inline CSS:</strong> Apply styles directly in HTML elements using the <code>style</code> attribute.</li>
+            <li><strong>Internal CSS:</strong> Styles defined inside the <code>&lt;style&gt;</code> tag within the HTML document.</li>
+            <li><strong>External CSS:</strong> A separate file with <code>.css</code> extension that is linked to the HTML document using the <code>&lt;link&gt;</code> tag.</li>
+        </ul>
+    </div>
+
+    <!-- Inline CSS -->
+    <div class="section">
+        <h2>2. Inline CSS</h2>
+        <p>Inline CSS is useful when a specific style needs to be applied to a single element.</p>
+        <pre>
+&lt;p style="color: red; font-size: 20px;"&gt;This is a paragraph with inline CSS.&lt;/p&gt;
+        </pre>
+    </div>
+
+    <!-- Internal CSS -->
+    <div class="section">
+        <h2>3. Internal CSS</h2>
+        <p>Internal CSS is placed inside the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> of an HTML document and applies to the entire document.</p>
+        <pre>
+&lt;style&gt;
+  body {
+    background-color: lightgray;
+    color: black;
+  }
+  h1 {
+    color: navy;
+  }
+&lt;/style&gt;
+        </pre>
+    </div>
+
+    <!-- External CSS -->
+    <div class="section">
+        <h2>4. External CSS</h2>
+        <p>External CSS is written in a separate file and linked to the HTML file using the <code>&lt;link&gt;</code> tag. It provides a way to apply the same style across multiple HTML pages.</p>
+        <pre>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+        </pre>
+    </div>
+
+    <!-- CSS Selectors -->
+    <div class="section">
+        <h2>5. CSS Selectors</h2>
+        <p>CSS Selectors are used to select and style HTML elements based on attributes like ID, class, tag name, etc.</p>
+        <ul>
+            <li><strong>Tag Selector:</strong> Selects all elements with a specific tag name.</li>
+            <pre>p { color: blue; }</pre>
+            
+            <li><strong>ID Selector:</strong> Selects an element with a specific ID, indicated by <code>#</code>.</li>
+            <pre>#header { background-color: gray; }</pre>
+            
+            <li><strong>Class Selector:</strong> Selects all elements with a specific class, indicated by <code>.</code>.</li>
+            <pre>.highlight { background-color: yellow; }</pre>
+            
+            <li><strong>Group Selector:</strong> Applies the same styles to multiple elements.</li>
+            <pre>h1, h2, p { color: green; }</pre>
+        </ul>
+    </div>
+
+    <!-- Pseudo-Classes and Pseudo-Elements -->
+    <div class="section">
+        <h2>6. Pseudo-Classes and Pseudo-Elements</h2>
+        <ul>
+            <li><strong>Pseudo-Classes:</strong> These target elements based on their state.</li>
+            <pre>a:hover { color: red; }</pre>
+            
+            <li><strong>Pseudo-Elements:</strong> Style specific parts of an element, such as the first letter or first line.</li>
+            <pre>p::before { content: "Note: "; }</pre>
+        </ul>
+    </div>
+
+    <!-- CSS Box Model -->
+    <div class="section">
+        <h2>7. CSS Box Model</h2>
+        <p>The box model represents the layout of elements, with properties for margin, border, padding, and content.</p>
+        <ul>
+            <li><strong>Content:</strong> The content inside the element.</li>
+            <li><strong>Padding:</strong> Space around the content, inside the border.</li>
+            <li><strong>Border:</strong> A boundary surrounding the padding.</li>
+            <li><strong>Margin:</strong> Space outside the border.</li>
+        </ul>
+        <pre>
+div {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+        </pre>
+    </div>
+
+    <!-- Background Properties -->
+    <div class="section">
+        <h2>8. Background Properties</h2>
+        <p>CSS background properties are used to apply backgrounds to elements.</p>
+        <ul>
+            <li><strong>Background Color:</strong> Sets the background color of an element.</li>
+            <pre>body { background-color: #f3f3f3; }</pre>
+            
+            <li><strong>Background Image:</strong> Sets an image as the background of an element.</li>
+            <pre>div { background-image: url('image.jpg'); }</pre>
+            
+            <li><strong>Background Position:</strong> Specifies the position of a background image.</li>
+            <pre>div { background-position: top right; }</pre>
+            
+            <li><strong>Background Repeat:</strong> Specifies how the background image repeats.</li>
+            <pre>div { background-repeat: no-repeat; }</pre>
+        </ul>
+    </div>
+
+    <!-- Borders and Border Radius -->
+    <div class="section">
+        <h2>9. Borders and Border Radius</h2>
+        <ul>
+            <li><strong>Border:</strong> Specifies the style, width, and color of the element's border.</li>
+            <pre>p { border: 2px solid black; }</pre>
+            
+            <li><strong>Border Radius:</strong> Rounds the corners of an element's border.</li>
+            <pre>div { border-radius: 10px; }</pre>
+        </ul>
+    </div>
+
+    <!-- CSS Gradients -->
+    <div class="section">
+        <h2>10. CSS Gradients</h2>
+        <ul>
+            <li><strong>Linear Gradient:</strong> A gradient that transitions between colors along a straight line.</li>
+            <pre>div { background: linear-gradient(to right, red, blue); }</pre>
+            
+            <li><strong>Radial Gradient:</strong> A gradient that radiates from a central point.</li>
+            <pre>div { background: radial-gradient(circle, red, blue); }</pre>
+        </ul>
+    </div>
+
+    <!-- CSS Flexbox -->
+    <div class="section">
+        <h2>11. CSS Flexbox</h2>
+        <p>Flexbox is a layout model that allows for flexible and responsive layouts.</p>
+        <pre>
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+        </pre>
+    </div>
+
+    <!-- CSS Grid -->
+    <div class="section">
+        <h2>12. CSS Grid</h2>
+        <p>CSS Grid Layout allows for two-dimensional grid-based layouts.</p>
+        <pre>
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+        </pre>
+    </div>
+<!-- CSS Transitions -->
+<div class="section">
+    <h2>13. CSS Transitions</h2>
+    <p>CSS Transitions allow you to change property values smoothly (over a given duration) rather than having them change instantly.</p>
+    <ul>
+        <li><strong>Transition Property:</strong> Specifies the CSS property that will undergo a transition.</li>
+        <pre>div { transition-property: background-color; }</pre>
+
+        <li><strong>Transition Duration:</strong> Specifies how long the transition will take.</li>
+        <pre>div { transition-duration: 2s; }</pre>
+
+        <li><strong>Transition Timing Function:</strong> Defines the speed curve for the transition (e.g., ease, linear, ease-in, ease-out).</li>
+        <pre>div { transition-timing-function: ease-in-out; }</pre>
+
+        <li><strong>Transition Delay:</strong> Specifies when the transition will start.</li>
+        <pre>div { transition-delay: 0.5s; }</pre>
+    </ul>
+</div>
+
+<!-- CSS Animations -->
+<div class="section">
+    <h2>14. CSS Animations</h2>
+    <p>CSS Animations allow for more complex and controlled animations, where elements can transition between multiple styles.</p>
+    <ul>
+        <li><strong>@keyframes:</strong> Defines the animation sequence.</li>
+        <pre>
+@keyframes example {
+  from { background-color: red; }
+  to { background-color: yellow; }
+}
+        </pre>
+
+        <li><strong>Animation Name:</strong> Specifies the keyframe to use for the animation.</li>
+        <pre>div { animation-name: example; }</pre>
+
+        <li><strong>Animation Duration:</strong> Defines how long the animation lasts.</li>
+        <pre>div { animation-duration: 4s; }</pre>
+
+        <li><strong>Animation Iteration Count:</strong> Specifies how many times the animation should repeat.</li>
+        <pre>div { animation-iteration-count: infinite; }</pre>
+    </ul>
+</div>
+
+<!-- CSS Positioning -->
+<div class="section">
+    <h2>15. CSS Positioning</h2>
+    <p>CSS positioning properties determine how an element is placed in the layout.</p>
+    <ul>
+        <li><strong>Static Position:</strong> This is the default positioning method, where elements are placed according to the normal document flow.</li>
+        <pre>div { position: static; }</pre>
+
+        <li><strong>Relative Position:</strong> An element's position can be adjusted relative to its normal position.</li>
+        <pre>div { position: relative; top: 10px; left: 20px; }</pre>
+
+        <li><strong>Absolute Position:</strong> Removes the element from the document flow and positions it relative to its nearest positioned ancestor (other than static).</li>
+        <pre>div { position: absolute; top: 50px; left: 100px; }</pre>
+
+        <li><strong>Fixed Position:</strong> Positions the element relative to the viewport, meaning it stays in place even when the page is scrolled.</li>
+        <pre>div { position: fixed; bottom: 10px; right: 10px; }</pre>
+
+        <li><strong>Sticky Position:</strong> Combines relative and fixed positioning, where the element is positioned relative until a certain point in the scroll.</li>
+        <pre>div { position: sticky; top: 0; }</pre>
+    </ul>
+</div>
+
+<!-- CSS Z-index -->
+<div class="section">
+    <h2>16. CSS Z-index</h2>
+    <p>The <code>z-index</code> property determines the stacking order of elements. Elements with a higher <code>z-index</code> are displayed in front of those with a lower value.</p>
+    <pre>div { z-index: 10; }</pre>
+</div>
+
+<!-- CSS Overflow -->
+<div class="section">
+    <h2>17. CSS Overflow</h2>
+    <p>The <code>overflow</code> property controls what happens when content overflows an element's box.</p>
+    <ul>
+        <li><strong>Overflow Visible:</strong> The overflow is not clipped, and the content is rendered outside the element's box.</li>
+        <pre>div { overflow: visible; }</pre>
+
+        <li><strong>Overflow Hidden:</strong> The overflow is clipped, and the rest of the content is hidden.</li>
+        <pre>div { overflow: hidden; }</pre>
+
+        <li><strong>Overflow Scroll:</strong> The overflow is clipped, but scrollbars appear to allow scrolling.</li>
+        <pre>div { overflow: scroll; }</pre>
+
+        <li><strong>Overflow Auto:</strong> Similar to <code>scroll</code>, but scrollbars are only added when necessary.</li>
+        <pre>div { overflow: auto; }</pre>
+    </ul>
+</div>
+
+<!-- CSS Display -->
+<div class="section">
+    <h2>18. CSS Display</h2>
+    <p>The <code>display</code> property specifies the display behavior of an element.</p>
+    <ul>
+        <li><strong>Display Block:</strong> The element takes up the full width of its container.</li>
+        <pre>div { display: block; }</pre>
+
+        <li><strong>Display Inline:</strong> The element takes up only as much space as its content, and does not start on a new line.</li>
+        <pre>span { display: inline; }</pre>
+
+        <li><strong>Display Inline-Block:</strong> Similar to <code>inline</code>, but allows for setting width and height.</li>
+        <pre>img { display: inline-block; }</pre>
+
+        <li><strong>Display None:</strong> Hides the element; it is removed from the document flow entirely.</li>
+        <pre>div { display: none; }</pre>
+    </ul>
+</div>
+
+<!-- CSS Visibility -->
+<div class="section">
+    <h2>19. CSS Visibility</h2>
+    <p>The <code>visibility</code> property controls the visibility of an element, but unlike <code>display: none;</code>, it keeps the space allocated for the element in the layout.</p>
+    <ul>
+        <li><strong>Visibility Visible:</strong> The element is visible (default).</li>
+        <pre>div { visibility: visible; }</pre>
+
+        <li><strong>Visibility Hidden:</strong> The element is hidden, but the space it occupies remains.</li>
+        <pre>div { visibility: hidden; }</pre>
+    </ul>
+</div>
+
+<!-- CSS Units -->
+<div class="section">
+    <h2>20. CSS Units</h2>
+    <p>CSS supports a variety of units for length, including both absolute and relative units.</p>
+    <ul>
+        <li><strong>Absolute Units:</strong> These units are fixed and do not change with the size of the viewport.</li>
+        <ul>
+            <li><code>px</code> - Pixels</li>
+            <li><code>pt</code> - Points (1pt = 1/72 of an inch)</li>
+            <li><code>cm</code> - Centimeters</li>
+        </ul>
+        <li><strong>Relative Units:</strong> These units change based on the size of other elements, such as the font size of the parent.</li>
+        <ul>
+            <li><code>%</code> - Percentage relative to the parent element.</li>
+            <li><code>em</code> - Relative to the font size of the element.</li>
+            <li><code>rem</code> - Relative to the font size of the root element.</li>
+            <li><code>vw</code> - Viewport width (1vw = 1% of the viewport's width).</li>
+            <li><code>vh</code> - Viewport height (1vh = 1% of the viewport's height).</li>
+        </ul>
+    </ul>
+</div>
+
+<!-- CSS Media Queries -->
+<div class="section">
+    <h2>21. CSS Media Queries</h2>
+    <p>Media queries allow you to apply CSS rules based on the characteristics of the user's device, such as the width of the screen.</p>
+    <pre>
+@media (max-width: 600px) {
+  div {
+    background-color: lightblue;
+  }
+}
+    </pre>
+    <p>Media queries are useful for creating responsive designs that adjust based on the screen size.</p>
+</div>
+<!-- CSS Visibility (continued) -->
+<div class="section">
+    <h2>19. CSS Visibility (continued)</h2>
+    <p>Visibility also includes:</p>
+    <ul>
+        <li><strong>Visibility Collapse:</strong> Used with table rows or columns to collapse them while maintaining their layout space.</li>
+        <pre>tr { visibility: collapse; }</pre>
+    </ul>
+</div>
+
+<!-- CSS Units (continued) -->
+<div class="section">
+    <h2>20. CSS Units (continued)</h2>
+    <p>Additional units include:</p>
+    <ul>
+        <li><strong>ch:</strong> Relative to the width of the "0" (zero) character in the font.</li>
+        <pre>div { width: 10ch; }</pre>
+
+        <li><strong>ex:</strong> Relative to the height of the lowercase "x" character in the font.</li>
+        <pre>div { height: 5ex; }</pre>
+    </ul>
+</div>
+
+<!-- CSS Flexbox -->
+<div class="section">
+    <h2>22. CSS Flexbox</h2>
+    <p>Flexbox is a layout model that allows you to design complex layouts easily and predictably.</p>
+    <ul>
+        <li><strong>Display Flex:</strong> Enables flex container on an element.</li>
+        <pre>container { display: flex; }</pre>
+
+        <li><strong>Flex Direction:</strong> Defines the direction of the flex items (row, column).</li>
+        <pre>container { flex-direction: row; }</pre>
+
+        <li><strong>Justify Content:</strong> Aligns flex items along the main axis.</li>
+        <pre>container { justify-content: center; }</pre>
+
+        <li><strong>Align Items:</strong> Aligns flex items along the cross axis.</li>
+        <pre>container { align-items: stretch; }</pre>
+
+        <li><strong>Flex Wrap:</strong> Specifies whether flex items should wrap onto multiple lines.</li>
+        <pre>container { flex-wrap: wrap; }</pre>
+    </ul>
+</div>
+
+<!-- CSS Grid -->
+<div class="section">
+    <h2>23. CSS Grid</h2>
+    <p>CSS Grid Layout provides a two-dimensional grid-based layout system.</p>
+    <ul>
+        <li><strong>Display Grid:</strong> Turns an element into a grid container.</li>
+        <pre>container { display: grid; }</pre>
+
+        <li><strong>Grid Template Columns:</strong> Defines the number and size of columns in the grid.</li>
+        <pre>container { grid-template-columns: 1fr 2fr; }</pre>
+
+        <li><strong>Grid Template Rows:</strong> Defines the number and size of rows in the grid.</li>
+        <pre>container { grid-template-rows: 100px 200px; }</pre>
+
+        <li><strong>Grid Area:</strong> Defines a grid item’s area within the grid.</li>
+        <pre>item { grid-area: header; }</pre>
+
+        <li><strong>Gap:</strong> Defines the space between grid items.</li>
+        <pre>container { gap: 10px; }</pre>
+    </ul>
+</div>
+
+<!-- CSS Variables -->
+<div class="section">
+    <h2>24. CSS Variables</h2>
+    <p>CSS Variables (Custom Properties) allow you to store values for reuse throughout your CSS.</p>
+    <ul>
+        <li><strong>Define Variable:</strong> Variables are defined with a <code>--</code> prefix.</li>
+        <pre>
+:root {
+  --main-color: coral;
+}
+        </pre>
+
+        <li><strong>Use Variable:</strong> Use the <code>var()</code> function to apply the variable.</li>
+        <pre>
+div {
+  background-color: var(--main-color);
+}
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Pseudo-classes -->
+<div class="section">
+    <h2>25. CSS Pseudo-classes</h2>
+    <p>Pseudo-classes apply styles to elements based on their state or position in the document.</p>
+    <ul>
+        <li><strong>:hover:</strong> Applies styles when the user hovers over an element.</li>
+        <pre>a:hover { color: red; }</pre>
+
+        <li><strong>:focus:</strong> Applies styles when an element is focused.</li>
+        <pre>input:focus { border-color: blue; }</pre>
+
+        <li><strong>:nth-child(n):</strong> Applies styles to the nth child of a parent.</li>
+        <pre>li:nth-child(2) { color: green; }</pre>
+
+        <li><strong>:first-child:</strong> Applies styles to the first child of a parent.</li>
+        <pre>p:first-child { font-weight: bold; }</pre>
+
+        <li><strong>:last-child:</strong> Applies styles to the last child of a parent.</li>
+        <pre>p:last-child { font-style: italic; }</pre>
+    </ul>
+</div>
+
+<!-- CSS Pseudo-elements -->
+<div class="section">
+    <h2>26. CSS Pseudo-elements</h2>
+    <p>Pseudo-elements create virtual elements that can be styled.</p>
+    <ul>
+        <li><strong>::before:</strong> Inserts content before an element's content.</li>
+        <pre>
+p::before {
+  content: "Note: ";
+  font-weight: bold;
+}
+        </pre>
+
+        <li><strong>::after:</strong> Inserts content after an element's content.</li>
+        <pre>
+p::after {
+  content: " (End of paragraph)";
+  font-style: italic;
+}
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Content Property -->
+<div class="section">
+    <h2>27. CSS Content Property</h2>
+    <p>The <code>content</code> property is used with pseudo-elements to generate content.</p>
+    <ul>
+        <li><strong>Using Content Property:</strong> Specifies the content to insert with <code>::before</code> or <code>::after</code>.</li>
+        <pre>
+p::before {
+  content: "Note: ";
+}
+        </pre>
+
+        <li><strong>Content Values:</strong> Can include text, images, and counters.</li>
+        <pre>
+p::after {
+  content: url('icon.png');
+}
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Gradients -->
+<div class="section">
+    <h2>28. CSS Gradients</h2>
+    <p>CSS Gradients are used to create smooth transitions between colors.</p>
+    <ul>
+        <li><strong>Linear Gradient:</strong> Creates a gradient along a straight line.</li>
+        <pre>
+background: linear-gradient(to right, red, yellow);
+        </pre>
+
+        <li><strong>Radial Gradient:</strong> Creates a gradient emanating from a center point.</li>
+        <pre>
+background: radial-gradient(circle, red, yellow);
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Filter -->
+<div class="section">
+    <h2>29. CSS Filter</h2>
+    <p>The <code>filter</code> property applies graphical effects like blur or color adjustments to elements.</p>
+    <ul>
+        <li><strong>Blur:</strong> Applies a blur effect.</li>
+        <pre>
+img { filter: blur(5px); }
+        </pre>
+
+        <li><strong>Brightness:</strong> Adjusts the brightness of an image.</li>
+        <pre>
+img { filter: brightness(150%); }
+        </pre>
+
+        <li><strong>Contrast:</strong> Adjusts the contrast of an image.</li>
+        <pre>
+img { filter: contrast(200%); }
+        </pre>
+    </ul>
+</div>
+<!-- CSS Transformations -->
+<div class="section">
+    <h2>30. CSS Transformations</h2>
+    <p>The <code>transform</code> property allows you to apply transformations to elements, such as translation, rotation, scaling, and skewing.</p>
+    <ul>
+        <li><strong>Translate:</strong> Moves an element from its current position.</li>
+        <pre>
+transform: translate(50px, 100px);
+        </pre>
+
+        <li><strong>Rotate:</strong> Rotates an element around its origin.</li>
+        <pre>
+transform: rotate(45deg);
+        </pre>
+
+        <li><strong>Scale:</strong> Scales an element up or down.</li>
+        <pre>
+transform: scale(1.5);
+        </pre>
+
+        <li><strong>Skew:</strong> Skews an element along the X or Y axis.</li>
+        <pre>
+transform: skew(30deg, 20deg);
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Transitions -->
+<div class="section">
+    <h2>31. CSS Transitions</h2>
+    <p>The <code>transition</code> property allows you to change property values smoothly over a specified duration.</p>
+    <ul>
+        <li><strong>Transition Property:</strong> Specifies the CSS properties to transition.</li>
+        <pre>
+transition: all 0.5s ease;
+        </pre>
+
+        <li><strong>Transition Duration:</strong> Defines the duration of the transition.</li>
+        <pre>
+transition-duration: 1s;
+        </pre>
+
+        <li><strong>Transition Timing Function:</strong> Defines the speed curve of the transition.</li>
+        <pre>
+transition-timing-function: ease-in-out;
+        </pre>
+
+        <li><strong>Transition Delay:</strong> Sets a delay before the transition starts.</li>
+        <pre>
+transition-delay: 0.2s;
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Animations -->
+<div class="section">
+    <h2>32. CSS Animations</h2>
+    <p>CSS Animations allow you to create complex animations by defining keyframes.</p>
+    <ul>
+        <li><strong>@keyframes:</strong> Defines the animation sequence.</li>
+        <pre>
+@keyframes slide {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+        </pre>
+
+        <li><strong>Animation Property:</strong> Applies the animation to an element.</li>
+        <pre>
+animation: slide 2s ease-in-out;
+        </pre>
+
+        <li><strong>Animation Duration:</strong> Defines how long the animation lasts.</li>
+        <pre>
+animation-duration: 2s;
+        </pre>
+
+        <li><strong>Animation Timing Function:</strong> Specifies the timing function of the animation.</li>
+        <pre>
+animation-timing-function: ease-in-out;
+        </pre>
+
+        <li><strong>Animation Delay:</strong> Sets a delay before the animation starts.</li>
+        <pre>
+animation-delay: 0.5s;
+        </pre>
+
+        <li><strong>Animation Iteration Count:</strong> Defines how many times the animation should repeat.</li>
+        <pre>
+animation-iteration-count: infinite;
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Overflow -->
+<div class="section">
+    <h2>33. CSS Overflow</h2>
+    <p>The <code>overflow</code> property controls the content overflow of an element.</p>
+    <ul>
+        <li><strong>Visible:</strong> Content is not clipped and may overflow.</li>
+        <pre>
+overflow: visible;
+        </pre>
+
+        <li><strong>Hidden:</strong> Content is clipped and not visible.</li>
+        <pre>
+overflow: hidden;
+        </pre>
+
+        <li><strong>Scroll:</strong> Content is clipped, but scrollbars are added.</li>
+        <pre>
+overflow: scroll;
+        </pre>
+
+        <li><strong>Auto:</strong> Scrollbars are added only when necessary.</li>
+        <pre>
+overflow: auto;
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Object Fit -->
+<div class="section">
+    <h2>34. CSS Object Fit</h2>
+    <p>The <code>object-fit</code> property specifies how the content of an element should be resized to fit its container.</p>
+    <ul>
+        <li><strong>Contain:</strong> Scales the content to fit the container while maintaining its aspect ratio.</li>
+        <pre>
+img { object-fit: contain; }
+        </pre>
+
+        <li><strong>Cover:</strong> Scales the content to cover the container while maintaining its aspect ratio.</li>
+        <pre>
+img { object-fit: cover; }
+        </pre>
+
+        <li><strong>Fill:</strong> Stretches the content to fill the container.</li>
+        <pre>
+img { object-fit: fill; }
+        </pre>
+
+        <li><strong>None:</strong> Does not resize the content.</li>
+        <pre>
+img { object-fit: none; }
+        </pre>
+
+        <li><strong>Scale Down:</strong> Scales the content to the smaller of the two options between contain and cover.</li>
+        <pre>
+img { object-fit: scale-down; }
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Clip Path -->
+<div class="section">
+    <h2>35. CSS Clip Path</h2>
+    <p>The <code>clip-path</code> property allows you to create a clipping region to show a part of an element.</p>
+    <ul>
+        <li><strong>Basic Shapes:</strong> Creates clipping paths using basic shapes.</li>
+        <pre>
+clip-path: circle(50%);
+        </pre>
+
+        <li><strong>Polygon:</strong> Defines a custom clipping path using a polygon.</li>
+        <pre>
+clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        </pre>
+
+        <li><strong>Inset:</strong> Clips an element using an inset rectangle.</li>
+        <pre>
+clip-path: inset(10% 20% 30% 40%);
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Z-Index -->
+<div class="section">
+    <h2>36. CSS Z-Index</h2>
+    <p>The <code>z-index</code> property specifies the stack order of elements. Higher values are in front of lower values.</p>
+    <ul>
+        <li><strong>Stacking Context:</strong> Defines the stacking order of positioned elements.</li>
+        <pre>
+div { position: absolute; z-index: 10; }
+        </pre>
+
+        <li><strong>Auto:</strong> Default value, the element inherits the z-index value from its parent.</li>
+        <pre>
+div { position: absolute; z-index: auto; }
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Alignment -->
+<div class="section">
+    <h2>37. CSS Alignment</h2>
+    <p>Alignment properties in CSS help position elements within containers.</p>
+    <ul>
+        <li><strong>Text Align:</strong> Aligns text within its container.</li>
+        <pre>
+p { text-align: center; }
+        </pre>
+
+        <li><strong>Vertical Align:</strong> Aligns inline or table-cell elements vertically.</li>
+        <pre>
+img { vertical-align: middle; }
+        </pre>
+
+        <li><strong>Align Self:</strong> Aligns a flex item inside its flex container.</li>
+        <pre>
+.item { align-self: flex-start; }
+        </pre>
+
+        <li><strong>Align Content:</strong> Aligns flex container lines within the flex container.</li>
+        <pre>
+.container { align-content: space-between; }
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Overflow Wrap -->
+<div class="section">
+    <h2>38. CSS Overflow Wrap</h2>
+    <p>The <code>overflow-wrap</code> property specifies whether the browser can break words and wrap text.</p>
+    <ul>
+        <li><strong>Normal:</strong> Allows words to break normally.</li>
+        <pre>
+p { overflow-wrap: normal; }
+        </pre>
+
+        <li><strong>Break-word:</strong> Allows long words to be broken and wrap onto the next line.</li>
+        <pre>
+p { overflow-wrap: break-word; }
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Writing Modes -->
+<div class="section">
+    <h2>39. CSS Writing Modes</h2>
+    <p>The <code>writing-mode</code> property specifies the direction in which text is written.</p>
+    <ul>
+        <li><strong>Horizontal-TB:</strong> Text flows horizontally from left to right.</li>
+        <pre>
+body { writing-mode: horizontal-tb; }
+        </pre>
+
+        <li><strong>Vertical-LR:</strong> Text flows vertically from top to bottom.</li>
+        <pre>
+body { writing-mode: vertical-lr; }
+        </pre>
+
+        <li><strong>Vertical-RL:</strong> Text flows vertically from bottom to top.</li>
+        <pre>
+body { writing-mode: vertical-rl; }
+        </pre>
+
+        <li><strong>Sideways:</strong> Allows sideways text.</li>
+        <pre>
+p { writing-mode: sideways-lr; }
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Logical Properties -->
+<div class="section">
+    <h2>40. CSS Logical Properties</h2>
+    <p>Logical properties provide a way to specify layout and spacing relative to the writing mode of the document.</p>
+    <ul>
+        <li><strong>Margin Inline:</strong> Sets the inline margin.</li>
+        <pre>
+div { margin-inline: 20px; }
+        </pre>
+
+        <li><strong>Padding Block:</strong> Sets the block padding.</li>
+        <pre>
+div { padding-block: 10px; }
+        </pre>
+
+        <li><strong>Border Block Start:</strong> Sets the border on the start side of the block.</li>
+        <pre>
+div { border-block-start: 2px solid black; }
+        </pre>
+    </ul>
+</div>
+<!-- CSS Grid Layout -->
+<div class="section">
+    <h2>41. CSS Grid Layout</h2>
+    <p>The <code>grid</code> property allows you to create complex layouts using rows and columns.</p>
+    <ul>
+        <li><strong>Grid Container:</strong> Defines the container for grid items.</li>
+        <pre>
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+}
+        </pre>
+
+        <li><strong>Grid Items:</strong> Items placed within the grid container.</li>
+        <pre>
+.item {
+  grid-column: span 2;
+  grid-row: 1;
+}
+        </pre>
+
+        <li><strong>Grid Template Columns:</strong> Defines the number and size of columns.</li>
+        <pre>
+grid-template-columns: 1fr 2fr 1fr;
+        </pre>
+
+        <li><strong>Grid Template Rows:</strong> Defines the number and size of rows.</li>
+        <pre>
+grid-template-rows: 100px 200px;
+        </pre>
+
+        <li><strong>Grid Area:</strong> Allows you to define an area within the grid.</li>
+        <pre>
+.item {
+  grid-area: header;
+}
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Flexbox -->
+<div class="section">
+    <h2>42. CSS Flexbox</h2>
+    <p>The <code>flex</code> property provides a way to distribute space and align items within a container.</p>
+    <ul>
+        <li><strong>Flex Container:</strong> Defines the container for flex items.</li>
+        <pre>
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+        </pre>
+
+        <li><strong>Flex Direction:</strong> Specifies the direction flex items are placed in the flex container.</li>
+        <pre>
+flex-direction: row; /* or column */
+        </pre>
+
+        <li><strong>Justify Content:</strong> Aligns items horizontally within the container.</li>
+        <pre>
+justify-content: center; /* or flex-start, flex-end, space-between, space-around */
+        </pre>
+
+        <li><strong>Align Items:</strong> Aligns items vertically within the container.</li>
+        <pre>
+align-items: center; /* or flex-start, flex-end, stretch */
+        </pre>
+
+        <li><strong>Flex Grow:</strong> Defines the ability for a flex item to grow if necessary.</li>
+        <pre>
+.item {
+  flex-grow: 1;
+}
+        </pre>
+
+        <li><strong>Flex Shrink:</strong> Defines the ability for a flex item to shrink if necessary.</li>
+        <pre>
+.item {
+  flex-shrink: 1;
+}
+        </pre>
+
+        <li><strong>Flex Basis:</strong> Defines the default size of a flex item before space distribution.</li>
+        <pre>
+.item {
+  flex-basis: 100px;
+}
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Variables -->
+<div class="section">
+    <h2>43. CSS Variables</h2>
+    <p>CSS variables (custom properties) allow you to store values that can be reused throughout a document.</p>
+    <ul>
+        <li><strong>Define Variables:</strong> Variables are defined within a selector using a custom property name.</li>
+        <pre>
+:root {
+  --main-color: #3498db;
+  --padding: 10px;
+}
+        </pre>
+
+        <li><strong>Use Variables:</strong> Variables are used by referencing their names.</li>
+        <pre>
+body {
+  color: var(--main-color);
+  padding: var(--padding);
+}
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Filter Effects -->
+<div class="section">
+    <h2>44. CSS Filter Effects</h2>
+    <p>The <code>filter</code> property applies graphical effects like blurring or color shifting to elements.</p>
+    <ul>
+        <li><strong>Blur:</strong> Applies a blur effect to an element.</li>
+        <pre>
+img { filter: blur(5px); }
+        </pre>
+
+        <li><strong>Brightness:</strong> Adjusts the brightness of an element.</li>
+        <pre>
+img { filter: brightness(0.8); }
+        </pre>
+
+        <li><strong>Contrast:</strong> Adjusts the contrast of an element.</li>
+        <pre>
+img { filter: contrast(1.5); }
+        </pre>
+
+        <li><strong>Saturate:</strong> Adjusts the saturation of an element.</li>
+        <pre>
+img { filter: saturate(2); }
+        </pre>
+
+        <li><strong>Grayscale:</strong> Converts the element to grayscale.</li>
+        <pre>
+img { filter: grayscale(100%); }
+        </pre>
+
+        <li><strong>Sepia:</strong> Applies a sepia effect to an element.</li>
+        <pre>
+img { filter: sepia(100%); }
+        </pre>
+
+        <li><strong>Hue Rotate:</strong> Adjusts the hue of an element.</li>
+        <pre>
+img { filter: hue-rotate(90deg); }
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Logical Properties -->
+<div class="section">
+    <h2>45. CSS Logical Properties</h2>
+    <p>Logical properties provide a way to specify layout properties relative to the writing mode of the document, enabling better support for different writing modes and directions.</p>
+    <ul>
+        <li><strong>Margin Inline Start:</strong> Sets the margin on the inline start side.</li>
+        <pre>
+.element { margin-inline-start: 20px; }
+        </pre>
+
+        <li><strong>Padding Block End:</strong> Sets the padding on the block end side.</li>
+        <pre>
+.element { padding-block-end: 15px; }
+        </pre>
+
+        <li><strong>Border Inline End:</strong> Sets the border on the inline end side.</li>
+        <pre>
+.element { border-inline-end: 2px solid black; }
+        </pre>
+
+        <li><strong>Border Block Start:</strong> Sets the border on the block start side.</li>
+        <pre>
+.element { border-block-start: 2px solid black; }
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Multi-Column Layout -->
+<div class="section">
+    <h2>46. CSS Multi-Column Layout</h2>
+    <p>The multi-column layout allows you to create multiple columns for text.</p>
+    <ul>
+        <li><strong>Column Count:</strong> Defines the number of columns.</li>
+        <pre>
+.column-container {
+  column-count: 3;
+}
+        </pre>
+
+        <li><strong>Column Width:</strong> Specifies the width of columns.</li>
+        <pre>
+.column-container {
+  column-width: 200px;
+}
+        </pre>
+
+        <li><strong>Column Gap:</strong> Sets the space between columns.</li>
+        <pre>
+.column-container {
+  column-gap: 20px;
+}
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Grid Auto Flow -->
+<div class="section">
+    <h2>47. CSS Grid Auto Flow</h2>
+    <p>The <code>grid-auto-flow</code> property controls how the auto-placement algorithm works in CSS Grid Layout.</p>
+    <ul>
+        <li><strong>Row:</strong> Items are placed into rows by default.</li>
+        <pre>
+.container { grid-auto-flow: row; }
+        </pre>
+
+        <li><strong>Column:</strong> Items are placed into columns.</li>
+        <pre>
+.container { grid-auto-flow: column; }
+        </pre>
+
+        <li><strong>Dense:</strong> Fills in gaps with items if possible.</li>
+        <pre>
+.container { grid-auto-flow: dense; }
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Flexbox Alignment -->
+<div class="section">
+    <h2>48. CSS Flexbox Alignment</h2>
+    <p>The flexbox alignment properties help to align flex items and containers.</p>
+    <ul>
+        <li><strong>Align Content:</strong> Aligns flex lines within the flex container.</li>
+        <pre>
+.container { align-content: space-between; }
+        </pre>
+
+        <li><strong>Align Items:</strong> Aligns items along the cross axis.</li>
+        <pre>
+.container { align-items: center; }
+        </pre>
+
+        <li><strong>Align Self:</strong> Allows a flex item to override the <code>align-items</code> property.</li>
+        <pre>
+.item { align-self: flex-end; }
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Grid Template Areas -->
+<div class="section">
+    <h2>49. CSS Grid Template Areas</h2>
+    <p>The <code>grid-template-areas</code> property allows you to name areas of a grid and place items into those areas.</p>
+    <ul>
+        <li><strong>Define Areas:</strong> Create named areas in the grid.</li>
+        <pre>
+.container {
+  grid-template-areas:
+    "header header header"
+    "main main sidebar"
+    "footer footer footer";
+}
+        </pre>
+
+        <li><strong>Assign Areas:</strong> Assign items to named grid areas.</li>
+        <pre>
+.header { grid-area: header; }
+.main { grid-area: main; }
+.sidebar { grid-area: sidebar; }
+.footer { grid-area: footer; }
+        </pre>
+    </ul>
+</div>
+
+<!-- CSS Custom Properties -->
+<div class="section">
+    <h2>50. CSS Custom Properties</h2>
+    <p>Custom properties (CSS variables) can be used to store and reuse values in CSS.</p>
+    <ul>
+        <li><strong>Define Variables:</strong> Variables are defined with a <code>--</code> prefix.</li>
+        <pre>
+:root {
+  --main-bg-color: lightblue;
+  --main-text-color: darkblue;
+}
+        </pre>
+
+        <li><strong>Use Variables:</strong> Variables are used with the <code>var()</code> function.</li>
+        <pre>
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+        </pre>
+    </ul>
+</div>
+
+<!-- End of CSS Notes -->
+
+</body>
+</html>

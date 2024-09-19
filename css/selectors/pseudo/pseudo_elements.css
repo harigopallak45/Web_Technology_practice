@@ -1,0 +1,42 @@
+/*  body{
+    display: flex;
+} 
+input ::placeholder{
+    color: rgb(255, 0, 149);
+}
+h1{
+    color: aqua;
+    background-image: linear-gradient(red, orange);
+    width: fit-content;
+}
+#heading::before{
+    content: "Hello, ";
+}
+#heading::after{
+    content: " Everyone 😊";
+}
+
+#webtech:hover{
+    background-color: aquamarine;
+}
+#webtech::first-letter{
+    color: red;
+    font-size: 50px;
+}
+.web::selection{
+    background-color: deeppink;
+    color: khaki;
+}
+#webtech_para::first-line{
+    color: blue;
+}
+#webtech_para::first-letter{
+    color: red;
+    font-size: 30px;
+} */
+ .outerlist_items::marker{
+    color: red;
+ }
+ #apple::marker{
+    content: "";
+ }

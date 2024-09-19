@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology Notes</title>
+</head>
+<body>
+    <h1>Web Technology Notes</h1>
+
+    <h2>What is a Web?</h2>
+    <ul>
+        <li><strong>Web</strong> is a system for sharing information over the internet using <strong>WWW (World Wide Web)</strong>.</li>
+        <li>It is one of the ways to share information globally over internet connections.</li>
+    </ul>
+
+    <h2>Internet</h2>
+    <ul>
+        <li>A global network of interconnected hardware devices.</li>
+        <li>Connects different networks together.</li>
+        <li><strong>Types of internet connections</strong>:
+            <ul>
+                <li>Wired</li>
+                <li>Wireless</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Browser</h2>
+    <ul>
+        <li>A software used to access websites, commonly called a <strong>client</strong> in the client-server model.</li>
+        <li>The <strong>client</strong> is the machine or software that requests information from servers.</li>
+    </ul>
+
+    <h2>Web Page</h2>
+    <ul>
+        <li>A digital document that can be accessed via a browser.</li>
+    </ul>
+
+    <h2>Website</h2>
+    <ul>
+        <li>A collection of related web pages hosted on the internet.</li>
+    </ul>
+
+    <h2>Web Server</h2>
+    <ul>
+        <li>A powerful computer with internet access that stores websites and their related information.</li>
+    </ul>
+
+    <h2>Types of Web Applications</h2>
+    <ol>
+        <li><strong>Static Web Applications</strong>:
+            <ul>
+                <li>Displays the same information for every user.</li>
+                <li>No dynamic content changes.</li>
+            </ul>
+        </li>
+        <li><strong>Dynamic Web Applications</strong>:
+            <ul>
+                <li>Displays different information based on server-side changes or user interactions.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Components of Web Applications</h2>
+    <ol>
+        <li><strong>Frontend</strong>:
+            <ul>
+                <li>The part of the website visible to the user.</li>
+                <li>Technologies: <strong>HTML, CSS, JavaScript</strong>.</li>
+            </ul>
+        </li>
+        <li><strong>Backend</strong>:
+            <ul>
+                <li>The server-side part of a website that is not visible to users.</li>
+                <li>Handles data and business logic.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h1>HTML (HyperText Markup Language)</h1>
+
+    <h2>What is HTML?</h2>
+    <ul>
+        <li>Stands for <strong>HyperText Markup Language</strong>.</li>
+        <li>It structures the content of web pages using <strong>tags</strong>.</li>
+        <li>HTML is called a markup language because it uses tags to define elements on a page.</li>
+    </ul>
+
+    <h2>HTML Syntax</h2>
+    <ul>
+        <li>HTML uses <strong>opening</strong> and <strong>closing tags</strong> to define elements.</li>
+        <pre>
+&lt;tagname&gt;content&lt;/tagname&gt;
+        </pre>
+        <li>Some tags are <strong>self-closing</strong> and do not require a closing tag.</li>
+    </ul>
+
+    <h2>Basic Structure (Boilerplate) of an HTML Page</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <ol>
+        <li><strong>DOCTYPE</strong>: Declares the document type and version of HTML.</li>
+        <li><strong>html</strong>: The root element that contains the entire HTML document.</li>
+        <li><strong>head</strong>: Contains metadata and links (e.g., CSS, scripts).</li>
+        <li><strong>body</strong>: Contains the content displayed to the user.</li>
+    </ol>
+
+   
+    <hr>
+
+    <h1>Div Element in HTML</h1>
+    <ul>
+        <li>A <strong>div</strong> creates sections in a webpage and is a block element.</li>
+        <li><strong>Block elements</strong> take up the full width available.</li>
+        <li>Use CSS to style <strong>div</strong> elements and control layout.</li>
+    </ul>
+
+    <h2>Float in CSS</h2>
+    <ul>
+        <li><strong>Float</strong>: An attribute used to position elements.
+            <ul>
+                <li><code>float: left;</code>: Element floats to the left side.</li>
+                <li><code>float: right;</code>: Element floats to the right side.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h1>Tables in HTML</h1>
+    <ul>
+        <li>Tables are used to display data in rows and columns.</li>
+    </ul>
+
+    <h2>Table Tags:</h2>
+    <ul>
+        <li><code>&lt;table&gt;</code>: Defines the table.</li>
+        <li><code>&lt;tr&gt;</code>: Defines a row.</li>
+        <li><code>&lt;td&gt;</code>: Defines a data cell.</li>
+        <li><code>&lt;th&gt;</code>: Defines a header cell.</li>
+        <li><strong>colspan</strong> and <strong>rowspan</strong>: 
+            <ul>
+                <li>Used to merge cells horizontally or vertically.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h1>Hyperlinks in HTML</h1>
+
+    <h2>Hyperlink Tag (<code>&lt;a&gt;</code>)</h2>
+    <ul>
+        <li>Links one webpage to another.</li>
+        <li>Uses the <code>href</code> attribute to specify the URL.
+            <pre>
+&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+            </pre>
+        </li>
+        <li>The <code>target</code> attribute can open the link in a new tab.
+            <pre>
+&lt;a href="https://example.com" target="_blank"&gt;Open in New Tab&lt;/a&gt;
+            </pre>
+        </li>
+    </ul>
+
+    <h2>Accessing Files with Relative Paths</h2>
+    <ul>
+        <li>File paths help us link or reference files from the source. To 
+access specific folders or files, we navigate the file structure 
+through the browser using either absolute or relative paths.</li>
+        <li>Relative paths are used to navigate between files in a project 
+folder:
+            <ul>
+                <li>To access the <strong>parent folder</strong>, we use 
+<code>../</code>.</li>
+                <li>To access the <strong>parent of the parent folder</strong>, 
+we use <code>../../</code>.</li>
+                <li>To access a <strong>current folder</strong>, we use <code>./
+</code>.</li>
+                <li>To access a <strong>child folder</strong>, we specify the 
+folder name followed by a slash <code>/</code>.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Working with Servers and Files</h2>
+    <p>
+        To access Excel files or other documents through a local server, create 
+a specific directory or folder for them. 
+        When using live servers, browsers won’t automatically search 
+directories unless specified with relative file paths.
+    </p>
+    <p>By using a local server, we can handle multiple files at once and sync 
+updates in real-time.</p>
+
+    <h2>HTML Structure and Elements</h2>
+    <ul>
+        <li>HTML block elements take up the full width of the container (e.g., 
+<code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>, etc.).</li>
+        <li>Scrolling: The content will scroll automatically if it exceeds the 
+dimensions set by CSS. Adjustments can be made using <code>width</
+code>, <code>height</code>, and <code>overflow</code> attributes.</li>
+    </ul>
+
+    <h2>HTML Forms</h2>
+    <p>HTML forms are used to collect user input. Forms consist of various 
+components:</p>
+    <ul>
+        <li><strong>Label Component</strong>: The <code>&lt;label&gt;</code> 
+element describes an input field.</li>
+        <li><strong>Input Component</strong>: The <code>&lt;input&gt;</code> 
+element allows the user to enter different types of data, such as:
+            <ul>
+                <li><code>type="text"</code>: Text input.</li>
+                <li><code>type="password"</code>: Password input.</li>
+                <li><code>type="number"</code>: Numeric input.</li>
+                <li><code>type="email"</code>: Email input.</li>
+                <li><code>type="date"</code>: Date input.</li>
+                <li><code>type="file"</code>: File upload.</li>
+            </ul>
+        </li>
+        <li><strong>Submit Button</strong>: The button triggers form submission.
+</li>
+        <li><strong>Placeholders</strong>: Provide hints inside input fields 
+using the <code>placeholder</code> attribute.</li>
+    </ul>
+
+    <h2>Special Input Attributes</h2>
+    <ul>
+        <li><strong>Required</strong>: Use <code>required</code> to make a 
+field mandatory.</li>
+        <li><strong>Readonly</strong>: Use <code>readonly</code> to prevent 
+modification of the field.</li>
+        <li><strong>Disabled</strong>: Use <code>disabled</code> to make an 
+input field uneditable.</li>
+    </ul>
+
+    <h2>Dropdown Lists</h2>
+    <ul>
+        <li>Use the <code>&lt;select&gt;</code> element to create a dropdown 
+list.</li>
+        <li>The <code>&lt;option&gt;</code> tag specifies options inside the 
+dropdown.</li>
+    </ul>
+    <div class="example">
+        Example:
+        <pre><code>&lt;select&gt;
+    &lt;option value="1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="2"&gt;Option 2&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+    </div>
+
+    <h2>Semantic HTML</h2>
+    <ul>
+        <li>Semantic tags define the content clearly for both developers and 
+browsers, improving readability.</li>
+        <li>Examples:
+            <ul>
+                <li><code>&lt;header&gt;</code>: Defines a section header.</li>
+                <li><code>&lt;nav&gt;</code>: Defines navigation links.</li>
+                <li><code>&lt;article&gt;</code>: Defines self-contained 
+content.</li>
+            </ul>
+        </li>
+        <li><strong>Non-semantic tags</strong> (e.g., <code>&lt;div&gt;</code>, 
+<code>&lt;span&gt;</code>) do not give clear meaning about their 
+content.</li>
+    </ul>
+
+    <h2>Lists in HTML</h2>
+    <ul>
+        <li><strong>Ordered Lists</strong> (`&lt;ol&gt;`): Display items in a 
+numbered list.</li>
+        <li><strong>Unordered Lists</strong> (`&lt;ul&gt;`): Display items with 
+bullet points.</li>
+        <li><strong>Description Lists</strong> (`&lt;dl&gt;`): Used for terms 
+and their descriptions.</li>
+    </ul>
+    <div class="example">
+        Example of an ordered list:
+        <pre><code>&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;</code></pre> 
+    </div>
+
+    <h2>CSS (Cascading Style Sheets)</h2>
+    <ul>
+        <li><strong>Cascading</strong> refers to the flow and application of 
+styles from different sources (e.g., internal, external, inline) to 
+each HTML element.</li>
+        <li>
+            <strong>Internal CSS</strong>: Defined within the &lt;style&gt; tag 
+inside the html document.
+        </li>
+        <li><strong>External CSS</strong>: Defined in separate `.css` files and 
+linked to the HTML using the `<link>` tag.</li>
+        <li><strong>Inline CSS</strong>: Styles are applied directly to HTML 
+elements using the `style` attribute.</li>
+    </ul>
+    <div class="example">
+        Example of linking an external CSS file:
+        <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;
+            </code></pre>
+    </div>
+
+    <h2>External CSS Best Practices</h2>
+    <p>Using external CSS is the preferred method because it:</p>
+    <ul>
+        <li>Ensures better performance by separating content from presentation.
+</li>
+        <li>Makes the HTML cleaner and easier to maintain.</li>
+        <li>Allows reuse of the same stylesheet across multiple HTML pages.</li>
+    </ul>
+
+</body>
+</html>
