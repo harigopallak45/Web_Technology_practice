@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#parent{
+    width: 100%;
+    height: 1080px;
+    background: linear-gradient(to right, red, yellow,blue,green,hotpink,lawngreen);
+    background-size: 5000px;
+    transition: all 25s linear;
+    
+}
+#parent:hover > .child_vehical{
+    margin-left: 85%;
+}
+img{
+    width: 15%; 
+    transition: all 5s;
+}
+#bike{
+    transition-timing-function: ease-in;
+    transition-delay: 5s;
+}
+#car{
+    transition-timing-function: ease-in-out;
+    transition-delay: 10s;
+}
+#truck{
+    transition-timing-function: ease-out;   
+    transition-delay: 15s;
+}
+#buldozer{
+    transition-timing-function: linear;    
+    transition-delay: 20s;
+}
+#parent:hover{
+    background-position: 5000px;
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header{
+    width: 100%;
+    height: 1000px;
+    background-color: red;
+    background-image: url(../../assets/images/hill2.png) ,url(../../assets/images/hill2.png) ,url(../../assets/images/hill.png),url(../../assets/images/hill.png);
+    background-size: 50%,30%,30%,50%;
+    background-position: left,,right,right;
+    background-repeat: no-repeat;
+
+} */
+
+header{
+    width: 100%;
+    height: 1000px;
+    background-image: url(../../assets/images/hill2.png),url(../../assets/images/small_left.png) ,url(../../assets/images/hill.png),url(../../assets/images/small_right.png),url(../../assets/images/night.png);
+    background-size: 45%,25%,45%,25%,100%;
+    background-position: left,600px 415px,right,800px 415px;
+    background-repeat: no-repeat;
+
+}

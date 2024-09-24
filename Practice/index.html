@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content">
+        <!-- Your content goes here -->
+        <h1>Hover to see the content</h1>
+        <p>This is some hidden content that will be revealed when you hover over it.</p>
+    </div>
+    <div class="cursor" id="cursor"></div>
+
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const spotlight = document.getElementById('cursor');
+            spotlight.style.left = e.pageX + 'px';
+            spotlight.style.top = e.pageY + 'px';
+        });
+    </script>
+</body>
+</html>
